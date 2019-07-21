@@ -1,0 +1,32 @@
+{
+    "name": "user/notifications",
+    "description": "This is library that uses composer as the basis for generating email notifications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcelo Silva",
+            "email": "tchelocallo@terra.com.br",
+            "homepage": "https://upinside.com.br",
+            "role": "Developer"
+        },
+        {
+            "name": "Robson V Leite",
+            "email": "robson@upinside.com.br",
+            "homepage": "https://upinside.com.br",
+            "role": "CEO and Founder"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.0.1"
+    },
+    "config": {
+       "vendor-dir": "lib_ext"
+    },
+    "autoload": {
+        "psr-4": {
+            "Notifications\\": "_app"
+        }    
+    }
+}
